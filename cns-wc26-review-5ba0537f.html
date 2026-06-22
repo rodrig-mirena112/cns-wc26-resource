@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明指南 · 世界杯</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fcfcfc;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            font-weight: 350;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* hero */
+        .hero {
+            padding: 100px 0 56px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 480;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #0c0c0c;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            max-width: 600px;
+        }
+
+        .hero .tagline {
+            display: inline-block;
+            background: #f0f2f5;
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            color: #3b3b3b;
+            margin-bottom: 28px;
+            letter-spacing: 0.2px;
+        }
+
+        /* 通用区块 */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #efefef;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.65rem;
+            font-weight: 460;
+            letter-spacing: -0.01em;
+            margin-bottom: 28px;
+            color: #111;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 430;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: #2e2e2e;
+        }
+
+        a {
+            color: #1a3a5c;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #5b7b9c;
+            text-decoration-thickness: 1px;
+        }
+
+        .highlight {
+            background: #f9f7f4;
+            padding: 24px 28px;
+            border-radius: 12px;
+            margin: 28px 0 16px;
+        }
+
+        .highlight p:last-child {
+            margin-bottom: 0;
+        }
+
+        .adv-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px 36px;
+            margin-top: 16px;
+        }
+
+        .adv-item {
+            border-top: 1px solid #e5e5e5;
+            padding-top: 18px;
+        }
+
+        .adv-item strong {
+            display: block;
+            font-weight: 500;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            color: #1c1c1c;
+        }
+
+        .faq-summary {
+            background: #f8f9fb;
+            border-radius: 16px;
+            padding: 32px 32px 28px;
+            margin-top: 20px;
+        }
+
+        .faq-item {
+            padding: 14px 0;
+            border-bottom: 1px solid #eaeef2;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item .q {
+            font-weight: 470;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #1f2b36;
+        }
+
+        .faq-item .a {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        .bottom-links {
+            padding: 48px 0 64px;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+            margin-top: 12px;
+        }
+
+        .bottom-links p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 6px;
+        }
+
+        .bottom-links a {
+            margin: 0 6px;
+        }
+
+        .footnote {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 24px;
+            letter-spacing: 0.3px;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 72px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 18px;
+            }
+
+            .adv-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .faq-summary {
+                padding: 22px 18px;
+            }
+
+            section {
+                padding: 44px 0;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- hero -->
+    <div class="hero">
+        <span class="tagline">简明观赛指南</span>
+        <h1>世界杯<br>观赛前你需要知道的几件事</h1>
+        <p>四年一度的盛会，既是竞技巅峰，也是全球文化交汇。无论你新老球迷，这份指南帮你更快进入节奏——从赛制、看点，到访问时的注意事项。</p>
+    </div>
+
+    <!-- 优势区：简明实用 -->
+    <section>
+        <h2>为什么这份指南值得留意</h2>
+        <div class="adv-grid">
+            <div class="adv-item">
+                <strong>信息精简，不冗余</strong>
+                <p>用最短篇幅梳理赛程结构、晋级规则和关键时间点，避免信息过载。</p>
+            </div>
+            <div class="adv-item">
+                <strong>实时提醒，更从容</strong>
+                <p>包含访问相关平台的注意事项，让你在查询赛果、观看回放时更加高效。</p>
+            </div>
+            <div class="adv-item">
+                <strong>中立视角，无干扰</strong>
+                <p>不夸大、不诱导，只提供经得起推敲的事实与常识。</p>
+            </div>
+            <div class="adv-item">
+                <strong>适配多端，随时翻看</strong>
+                <p>页面极简，手机、平板、桌面均能清晰阅读，方便对照。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 说明区：知识型内容 + 提醒 -->
+    <section>
+        <h2>从赛制到访问：基础说明</h2>
+        <p>世界杯决赛圈通常由32支球队（2026年起扩至48支）经过小组赛与淘汰赛决出冠军。小组赛阶段每队进行三场比赛，胜积3分、平积1分、负0分，小组前两名晋级十六强。淘汰赛包括加时赛与点球决胜，赛程紧凑。</p>
+
+        <div class="highlight">
+            <p><strong>一个实用提醒：</strong>赛程密集期间，部分赛事信息平台可能因流量出现短时延迟。建议提前确认网络环境，或使用官方渠道获取准确赛程。若你需要浏览和了解关于本届赛事的完整信息，推荐直接访问 <a href="https://cns-wc26.com">世界杯</a> 相关页面，其中整合了赛程、积分榜与球队资料，是获取信息的高效起点。</p>
+        </div>
+
+        <h3>常见观赛场景与对应策略</h3>
+        <p>小组赛最后一轮同一小组两场比赛同时开球，容易产生积分连锁变化。建议同时关注两场动态，或使用实时数据页面交替查看。淘汰赛单场决胜，加时赛与点球概率不低，提前安排时间更稳妥。</p>
+        <p>对于需要查阅历史交锋、伤停名单或裁判信息的观众，聚合类站点比单一平台更高效。特别提醒：任何第三方数据平台都应以官方信息为最终依据。</p>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+        <h2>FAQ 摘要</h2>
+        <div class="faq-summary">
+            <div class="faq-item">
+                <div class="q">小组赛同分如何排名？</div>
+                <div class="a">先看净胜球，再看进球数，若仍相同则比较相互战绩。极端情况下由公平竞赛积分或抽签决定。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">哪里看完整赛程最稳定？</div>
+                <div class="a">国际足联官网以及部分授权媒体均提供赛程。你也可以通过 <a href="https://cns-wc26.com">世界杯</a> 专题页面快速查看对阵与时间，信息更新同步。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">加时赛与点球规则有变化吗？</div>
+                <div class="a">目前淘汰赛加时仍为上下半场各15分钟，可换第四人（如进入加时）。点球大战采用ABBA顺序（实际执行中仍有传统交替方式），具体视当届规程而定。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">访问赛事网站应注意什么？</div>
+                <div class="a">尽量使用官方或信誉良好的站点，避免通过陌生链接输入个人信息。书签收藏常用页，防止误入仿冒域名。</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <div class="bottom-links">
+        <p>更多赛事信息 · <a href="https://cns-wc26.com">世界杯</a></p>
+        <p class="footnote">本页仅提供知识性介绍，不构成任何导向性建议。一切赛程与规则以官方公布为准。</p>
+    </div>
+
+</div>
+
+</body>
+</html>
